@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AvatarListViewController.swift
 //  Character2
 //
 //  Created by Adrian McDaniel on 1/17/17.
@@ -20,7 +20,7 @@ class AvatarListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
+        //self.tableView.delegate = self
         self.tableView.dataSource = dataSource
     }
     
@@ -30,7 +30,7 @@ class AvatarListViewController: UIViewController {
     }
 }
 
-extension AvatarListViewController : UITableViewDelegate {
+/*extension AvatarListViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let avatar = dataSource[indexPath.row]
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -41,9 +41,9 @@ extension AvatarListViewController : UITableViewDelegate {
         
         self.present(editingVC, animated: true, completion: nil)
     }
-}
+}*/
 
-extension AvatarListViewController : AvatarEditingViewControllerDelegate {
+/*extension AvatarListViewController : AvatarEditingViewControllerDelegate {
     func avatarEditingViewControllerDidEndEditing(_ viewController: AvatarEditingViewController, avatar: Avatar) {
         
         
@@ -58,13 +58,13 @@ extension AvatarListViewController : AvatarEditingViewControllerDelegate {
             fatalError("Wat?")
         }
     }
-}
+}*/
 
 class CharacterListDataSource: NSObject, UITableViewDataSource {
     var characters: [Avatar] = [
-        Avatar(name: "Peter"),
-        Avatar(name: "Paul"),
-        Avatar(name: "Mary"),
+        Avatar(name: "Peter", size: "Small", color: "Gold"),
+        Avatar(name: "Paul", size: "Large", color: "Red"),
+        Avatar(name: "Mary", size: "Large", color: "Blue")
         ]
     
     subscript(_ index: Int) -> Avatar {
@@ -85,6 +85,8 @@ class CharacterListDataSource: NSObject, UITableViewDataSource {
         let avatar = characters[indexPath.row]
         
         cell.nameLabel.text = avatar.name
+        cell.colorLabel.text = avatar.color
+        cell.sizeLabel.text = avatar.size
         
         return cell
     }

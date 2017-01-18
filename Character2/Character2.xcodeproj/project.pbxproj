@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07915B911E2FF072008A06B9 /* AvatarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B901E2FF072008A06B9 /* AvatarTableViewController.swift */; };
+		07915B931E2FF099008A06B9 /* AvatarEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B921E2FF099008A06B9 /* AvatarEditViewController.swift */; };
 		07FFA19B1E2DE07900D4D7F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA19A1E2DE07900D4D7F3 /* AppDelegate.swift */; };
-		07FFA19D1E2DE07900D4D7F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA19C1E2DE07900D4D7F3 /* ViewController.swift */; };
 		07FFA1A01E2DE07900D4D7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA19E1E2DE07900D4D7F3 /* Main.storyboard */; };
 		07FFA1A21E2DE07900D4D7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA1A11E2DE07900D4D7F3 /* Assets.xcassets */; };
 		07FFA1A51E2DE07900D4D7F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA1A31E2DE07900D4D7F3 /* LaunchScreen.storyboard */; };
 		07FFA1AD1E2DE0B100D4D7F3 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA1AC1E2DE0B100D4D7F3 /* Avatar.swift */; };
 		07FFA1CD1E2E54E300D4D7F3 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA1CC1E2E54E300D4D7F3 /* AvatarCell.swift */; };
-		07FFA1D11E2E55FE00D4D7F3 /* AvatarEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA1D01E2E55FE00D4D7F3 /* AvatarEditingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07915B901E2FF072008A06B9 /* AvatarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTableViewController.swift; sourceTree = "<group>"; };
+		07915B921E2FF099008A06B9 /* AvatarEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarEditViewController.swift; sourceTree = "<group>"; };
 		07FFA1971E2DE07900D4D7F3 /* Character2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Character2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFA19A1E2DE07900D4D7F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07FFA19C1E2DE07900D4D7F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07FFA19F1E2DE07900D4D7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07FFA1A11E2DE07900D4D7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FFA1A41E2DE07900D4D7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FFA1A61E2DE07900D4D7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FFA1AC1E2DE0B100D4D7F3 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		07FFA1CC1E2E54E300D4D7F3 /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
-		07FFA1D01E2E55FE00D4D7F3 /* AvatarEditingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarEditingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				07FFA19A1E2DE07900D4D7F3 /* AppDelegate.swift */,
-				07FFA19C1E2DE07900D4D7F3 /* ViewController.swift */,
 				07FFA1CC1E2E54E300D4D7F3 /* AvatarCell.swift */,
-				07FFA1D01E2E55FE00D4D7F3 /* AvatarEditingViewController.swift */,
 				07FFA1AC1E2DE0B100D4D7F3 /* Avatar.swift */,
 				07FFA19E1E2DE07900D4D7F3 /* Main.storyboard */,
+				07915B901E2FF072008A06B9 /* AvatarTableViewController.swift */,
+				07915B921E2FF099008A06B9 /* AvatarEditViewController.swift */,
 				07FFA1A11E2DE07900D4D7F3 /* Assets.xcassets */,
 				07FFA1A31E2DE07900D4D7F3 /* LaunchScreen.storyboard */,
 				07FFA1A61E2DE07900D4D7F3 /* Info.plist */,
@@ -145,10 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FFA1D11E2E55FE00D4D7F3 /* AvatarEditingViewController.swift in Sources */,
+				07915B911E2FF072008A06B9 /* AvatarTableViewController.swift in Sources */,
 				07FFA1AD1E2DE0B100D4D7F3 /* Avatar.swift in Sources */,
-				07FFA19D1E2DE07900D4D7F3 /* ViewController.swift in Sources */,
 				07FFA1CD1E2E54E300D4D7F3 /* AvatarCell.swift in Sources */,
+				07915B931E2FF099008A06B9 /* AvatarEditViewController.swift in Sources */,
 				07FFA19B1E2DE07900D4D7F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +311,7 @@
 				07FFA1AB1E2DE07900D4D7F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
