@@ -20,6 +20,8 @@ class AvatarTableViewController: UITableViewController {
         return characters[index]
     }
     
+    var indexOfAvatarToEdit: Int? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.delegate = self
@@ -27,39 +29,7 @@ class AvatarTableViewController: UITableViewController {
     }
     
     
-
-
-/*extension AvatarListViewController : UITableViewDelegate {
- func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
- let avatar = dataSource[indexPath.row]
- let storyBoard = UIStoryboard(name: "Main", bundle: nil)
- let editingVC = storyBoard.instantiateViewController(withIdentifier: "AvatarEditing") as! AvatarEditingViewController
- indexOfAvatarToEdit = indexPath.row
- editingVC.avatar = avatar
- editingVC.delegate = self
- 
- self.present(editingVC, animated: true, completion: nil)
- }
- }*/
-
-/*extension AvatarListViewController : AvatarEditingViewControllerDelegate {
- func avatarEditingViewControllerDidEndEditing(_ viewController: AvatarEditingViewController, avatar: Avatar) {
- 
- 
- if viewController === presentedViewController,
- let index = indexOfAvatarToEdit {
- dataSource.characters[index] = avatar
- indexOfAvatarToEdit = nil
- tableView.reloadData()
- 
- dismiss(animated: true, completion: nil)
- } else {
- fatalError("Wat?")
- }
- }
- }*/
-
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -78,4 +48,34 @@ class AvatarTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let avatar = characters[indexPath.row]
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let editingVC = storyBoard.instantiateViewController(withIdentifier: "AvatarEdit") as! AvatarEditViewController
+        indexOfAvatarToEdit = indexPath.row
+        editingVC.avatar = avatar
+        editingVC.delegate = self
+        
+        self.present(editingVC, animated: true, completion: nil)
+    }
+    
 }
+
+extension AvatarTableViewController : AvatarEditViewControllerDelegate {
+    func avatarEditViewControllerDidEndEditing(_ viewController: AvatarEditViewController, avatar: Avatar) {
+        
+        
+        if viewController === presentedViewController,
+            let index = indexOfAvatarToEdit {
+            characters[index] = avatar
+            indexOfAvatarToEdit = nil
+            tableView.reloadData()
+            
+            dismiss(animated: true, completion: nil)
+        } else {
+            fatalError("Wat?")
+        }
+    }
+}
+
