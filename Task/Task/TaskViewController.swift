@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TaskViewController.swift
 //  Task
 //
 //  Created by Adrian McDaniel on 1/17/17.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class TaskListViewController: UIViewController {
+class TaskListViewController: UITableViewController {
+    
     let dataSource: TaskListDataSource = TaskListDataSource()
-    var indexOfAvatarToEdit: Int? = nil
+    var indexOfTaskToEdit: Int? = nil
     
     var tableView: UITableView {
         return view as! UITableView
@@ -33,7 +34,7 @@ class TaskListViewController: UIViewController {
 
 
 class TaskListDataSource: NSObject, UITableViewDataSource {
-    var characters: [Task] = [
+    var tasks: [Task] = [
         Task(title: "homework", type: "schoolwork"),
         Task(title: "dishes", type: "housework"),
         Task(title: "wash car", type: "autowork"),
@@ -51,19 +52,16 @@ class TaskListDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return characters.count
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskCell
         let task = tasks[indexPath.row]
         
-        cell.nameLabel.text = task.name
         cell.titleLabel.text = task.title
-        
+        cell.typeLabel.text = task.type
         return cell
     }
     
 }
-
-

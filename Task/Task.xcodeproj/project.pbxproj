@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07915B8F1E2FE12D008A06B9 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B8E1E2FE12D008A06B9 /* TaskTableViewController.swift */; };
 		07FFA17B1E2DDE7A00D4D7F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA17A1E2DDE7A00D4D7F3 /* AppDelegate.swift */; };
-		07FFA17D1E2DDE7A00D4D7F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA17C1E2DDE7A00D4D7F3 /* ViewController.swift */; };
 		07FFA1801E2DDE7A00D4D7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA17E1E2DDE7A00D4D7F3 /* Main.storyboard */; };
 		07FFA1821E2DDE7A00D4D7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA1811E2DDE7A00D4D7F3 /* Assets.xcassets */; };
 		07FFA1851E2DDE7A00D4D7F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA1831E2DDE7A00D4D7F3 /* LaunchScreen.storyboard */; };
 		07FFA18D1E2DDE8900D4D7F3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA18C1E2DDE8900D4D7F3 /* Task.swift */; };
+		07FFA1CF1E2E553500D4D7F3 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA1CE1E2E553500D4D7F3 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07915B8E1E2FE12D008A06B9 /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		07FFA1771E2DDE7A00D4D7F3 /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFA17A1E2DDE7A00D4D7F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07FFA17C1E2DDE7A00D4D7F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07FFA17F1E2DDE7A00D4D7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07FFA1811E2DDE7A00D4D7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FFA1841E2DDE7A00D4D7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FFA1861E2DDE7A00D4D7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FFA18C1E2DDE8900D4D7F3 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		07FFA1CE1E2E553500D4D7F3 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				07FFA17A1E2DDE7A00D4D7F3 /* AppDelegate.swift */,
-				07FFA17C1E2DDE7A00D4D7F3 /* ViewController.swift */,
 				07FFA18C1E2DDE8900D4D7F3 /* Task.swift */,
+				07915B8E1E2FE12D008A06B9 /* TaskTableViewController.swift */,
+				07FFA1CE1E2E553500D4D7F3 /* TaskCell.swift */,
 				07FFA17E1E2DDE7A00D4D7F3 /* Main.storyboard */,
 				07FFA1811E2DDE7A00D4D7F3 /* Assets.xcassets */,
 				07FFA1831E2DDE7A00D4D7F3 /* LaunchScreen.storyboard */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FFA17D1E2DDE7A00D4D7F3 /* ViewController.swift in Sources */,
+				07FFA1CF1E2E553500D4D7F3 /* TaskCell.swift in Sources */,
 				07FFA18D1E2DDE8900D4D7F3 /* Task.swift in Sources */,
+				07915B8F1E2FE12D008A06B9 /* TaskTableViewController.swift in Sources */,
 				07FFA17B1E2DDE7A00D4D7F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +307,7 @@
 				07FFA18B1E2DDE7A00D4D7F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
