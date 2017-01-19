@@ -152,6 +152,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-CD-gRB">
                                 <rect key="frame" x="175" y="546" width="37" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Enter"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="endEditing3:" destination="X0z-xe-DQ5" eventType="touchUpInside" id="PGM-KZ-fCp"/>
