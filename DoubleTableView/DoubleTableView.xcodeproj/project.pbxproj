@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0742D7931E301950006E1293 /* DoubleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742D7921E301950006E1293 /* DoubleTableViewCell.swift */; };
 		07915BA11E30057E008A06B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915BA01E30057E008A06B9 /* AppDelegate.swift */; };
-		07915BA31E30057E008A06B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915BA21E30057E008A06B9 /* ViewController.swift */; };
+		07915BA31E30057E008A06B9 /* DoubleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915BA21E30057E008A06B9 /* DoubleViewController.swift */; };
 		07915BA61E30057E008A06B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07915BA41E30057E008A06B9 /* Main.storyboard */; };
 		07915BA81E30057E008A06B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07915BA71E30057E008A06B9 /* Assets.xcassets */; };
 		07915BAB1E30057E008A06B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07915BA91E30057E008A06B9 /* LaunchScreen.storyboard */; };
+		07915BB31E3005E6008A06B9 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915BB21E3005E6008A06B9 /* MovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0742D7921E301950006E1293 /* DoubleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTableViewCell.swift; sourceTree = "<group>"; };
 		07915B9D1E30057E008A06B9 /* DoubleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07915BA01E30057E008A06B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07915BA21E30057E008A06B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07915BA21E30057E008A06B9 /* DoubleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleViewController.swift; sourceTree = "<group>"; };
 		07915BA51E30057E008A06B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07915BA71E30057E008A06B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07915BAA1E30057E008A06B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07915BAC1E30057E008A06B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07915BB21E3005E6008A06B9 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				07915BA01E30057E008A06B9 /* AppDelegate.swift */,
-				07915BA21E30057E008A06B9 /* ViewController.swift */,
+				07915BA21E30057E008A06B9 /* DoubleViewController.swift */,
+				07915BB21E3005E6008A06B9 /* MovieList.swift */,
 				07915BA41E30057E008A06B9 /* Main.storyboard */,
+				0742D7921E301950006E1293 /* DoubleTableViewCell.swift */,
 				07915BA71E30057E008A06B9 /* Assets.xcassets */,
 				07915BA91E30057E008A06B9 /* LaunchScreen.storyboard */,
 				07915BAC1E30057E008A06B9 /* Info.plist */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07915BA31E30057E008A06B9 /* ViewController.swift in Sources */,
+				07915BB31E3005E6008A06B9 /* MovieList.swift in Sources */,
+				07915BA31E30057E008A06B9 /* DoubleViewController.swift in Sources */,
+				0742D7931E301950006E1293 /* DoubleTableViewCell.swift in Sources */,
 				07915BA11E30057E008A06B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				07915BB11E30057E008A06B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

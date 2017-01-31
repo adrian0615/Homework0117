@@ -11,9 +11,9 @@ import UIKit
 class AvatarTableViewController: UITableViewController {
     
     var characters: [Avatar] = [
-        Avatar(name: "Peter", size: "Small", color: "Gold"),
-        Avatar(name: "Paul", size: "Large", color: "Red"),
-        Avatar(name: "Mary", size: "Large", color: "Blue")
+        Avatar(name: "Alan", size: "Small", color: "Gold"),
+        Avatar(name: "Rick", size: "Large", color: "Red"),
+        Avatar(name: "Lisa", size: "Large", color: "Blue")
     ]
     
     subscript(_ index: Int) -> Avatar {

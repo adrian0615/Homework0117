@@ -7,14 +7,14 @@
     "CB31EE023BA5C83B57FFB82C5C7FE0B2C470BCA1" : 9223372036854775807,
     "124E5EE3E7F19425E9C1F01FEE945AEFA91D990E" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "53662593-F47A-439C-8161-8805273677C1",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A46E3519-33FE-4B59-9E16-A77D96ECDFBF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "CB31EE023BA5C83B57FFB82C5C7FE0B2C470BCA1" : "",
     "124E5EE3E7F19425E9C1F01FEE945AEFA91D990E" : "Homework0117\/"
   },
-  "DVTSourceControlWorkspaceBlueprintNameKey" : "DoubleTableTrouble",
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DoubleTableView",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DoubleTableTrouble\/DoubleTableTrouble.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DoubleTableView\/DoubleTableView.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adrian0615\/Homework0117.git",
